@@ -1,11 +1,10 @@
-﻿using Avalonia;
-using Avalonia.Layout;
-using Avalonia.Controls;
+﻿using Avalonia.Controls;
+using Avalonia.ExtendedToolkit.Controls;
 using Avalonia.Interactivity;
 using Avalonia.Markup.Xaml;
 using Avalonia.Media;
-using Avalonia.ExtendedToolkit.Controls;
 using System;
+using Avalonia.Layout;
 
 namespace Avalonia.ExampleApp.Views
 {
@@ -67,7 +66,7 @@ namespace Avalonia.ExampleApp.Views
                     IsIndeterminate = true,
                     IsHitTestVisible = false
                 })
-                .Queue(); 
+                .Queue();
         }
 
         private void ButtonInfoOnClick(object sender, RoutedEventArgs e)
@@ -155,7 +154,7 @@ namespace Avalonia.ExampleApp.Views
         }
 
 
-        
+
 
         /// <summary>
         /// Gets the notification message manager.

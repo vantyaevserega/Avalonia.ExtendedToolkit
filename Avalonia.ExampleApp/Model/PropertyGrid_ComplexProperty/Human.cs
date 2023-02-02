@@ -1,14 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel;
-using System.Text;
 using ReactiveUI;
 
 namespace Avalonia.ExampleApp.Model
 {
     public class Human : ReactiveObject
     {
-        private string _name= "John";
+        private string _name = "John";
 
         [NotifyParentProperty(true)]
         public string Name
@@ -21,7 +19,7 @@ namespace Avalonia.ExampleApp.Model
             }
         }
 
-        private string _surname= "Doe";
+        private string _surname = "Doe";
 
         public string Surname
         {

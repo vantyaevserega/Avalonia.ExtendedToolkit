@@ -1,8 +1,8 @@
-﻿using Avalonia;
-using Avalonia.Controls;
-using Avalonia.ExtendedToolkit;
-using Avalonia.Markup.Xaml;
+﻿using Avalonia.ExtendedToolkit;
 using System;
+
+using Avalonia.Controls;
+using Avalonia.Markup.Xaml;
 
 namespace Avalonia.ExampleApp.Views
 {
@@ -65,7 +65,7 @@ namespace Avalonia.ExampleApp.Views
                 childCount++;
                 // Create the child
                 Item child = new Item(String.Format("Child {0}, Level {1}", childCount, level), value++, hasChildren);
-                
+
 
                 // Does the child have children?
                 if (hasChildren)

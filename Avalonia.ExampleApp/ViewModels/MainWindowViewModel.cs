@@ -12,13 +12,10 @@ using Avalonia.Styling;
 using Avalonia.Threading;
 using ReactiveUI;
 using System;
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
-using System.Diagnostics;
 using System.Linq;
 using System.Reactive.Linq;
-using System.Text;
 using System.Windows.Input;
 
 namespace Avalonia.ExampleApp.ViewModels
@@ -356,7 +353,7 @@ namespace Avalonia.ExampleApp.ViewModels
             this.Albums = SampleData.Albums;
             this.Artists = SampleData.Artists;
 
-            SelectedArtist=Artists.FirstOrDefault();
+            SelectedArtist = Artists.FirstOrDefault();
 
             var collectionView = new DataGridCollectionView(SampleData.Albums);
             collectionView.GroupDescriptions.Add(new DataGridPathGroupDescription(nameof(Album.Artist.Name)));

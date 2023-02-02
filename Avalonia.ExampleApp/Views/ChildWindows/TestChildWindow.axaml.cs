@@ -1,14 +1,13 @@
-﻿using System;
-using Avalonia;
-using Avalonia.Controls;
+﻿using Avalonia.Controls;
 using Avalonia.ExtendedToolkit.Controls;
 using Avalonia.Markup.Xaml;
+using System;
 
 namespace Avalonia.ExampleApp.Views
 {
     public class TestChildWindow : UserControl
     {
-        public ChildWindow Child{get;}
+        public ChildWindow Child { get; }
 
         public TestChildWindow()
         {
@@ -17,7 +16,7 @@ namespace Avalonia.ExampleApp.Views
 
             this.FindControl<Button>("btnCloseSec").Click += CloseSec_OnClick;
 
-            Child=this.FindControl<ChildWindow>("child");
+            Child = this.FindControl<ChildWindow>("child");
         }
 
         private void CloseSec_OnClick(object sender, EventArgs args)

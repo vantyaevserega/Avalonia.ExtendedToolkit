@@ -1,14 +1,13 @@
-﻿using System;
-using Avalonia.Controlz.Controls;
+﻿using Avalonia.Controlz.Controls;
 using Avalonia.Controlz.EventArgs;
-using Avalonia.ExtendedToolkit.Controls.PropertyGrid.PropertyTypes;
+using System;
 
 namespace Avalonia.ExampleApp.Model
 {
     public class PointEditor : SliderEx
     {
         private bool _isUpdating;
-        
+
 
         public Point EditValue
         {
@@ -104,7 +103,7 @@ namespace Avalonia.ExampleApp.Model
             editor.UpdateValue();
         }
 
-        
+
 
         private void UpdateValue()
         {
@@ -112,7 +111,7 @@ namespace Avalonia.ExampleApp.Model
                 return;
 
             _isUpdating = true;
-            
+
             switch (DisplayMember)
             {
                 case PointDisplayMember.X:
@@ -127,8 +126,8 @@ namespace Avalonia.ExampleApp.Model
 
                 default:
                     Value = 0;
-                    
-                    
+
+
                     break;
             }
 

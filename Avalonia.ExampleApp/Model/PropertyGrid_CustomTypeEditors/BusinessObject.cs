@@ -1,9 +1,9 @@
-﻿using System;
-using System.ComponentModel;
-using Avalonia.Controls;
+﻿using Avalonia.Controls;
 using Avalonia.Controls.Primitives;
 using Avalonia.ExtendedToolkit.Controls.PropertyGrid;
 using Avalonia.Media;
+using System;
+using System.ComponentModel;
 
 namespace Avalonia.ExampleApp.Model.PropertyGrid_CustomTypeEditors
 {
@@ -335,7 +335,7 @@ namespace Avalonia.ExampleApp.Model.PropertyGrid_CustomTypeEditors
 
 
         public static readonly StyledProperty<Point> PointProperty =
-            AvaloniaProperty.Register<BusinessObject, Point>(nameof(Point), defaultValue:new Point(0,0));
+            AvaloniaProperty.Register<BusinessObject, Point>(nameof(Point), defaultValue: new Point(0, 0));
 
 
 

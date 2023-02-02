@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 using ReactiveUI;
 
 namespace Avalonia.ExampleApp.Model.PropertyGrid_ExtendedEditor

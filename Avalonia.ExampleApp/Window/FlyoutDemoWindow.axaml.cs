@@ -1,10 +1,8 @@
-﻿using System;
-using System.Linq;
-using Avalonia;
-using Avalonia.Controls;
+﻿using Avalonia.Controls;
 using Avalonia.ExtendedToolkit.Controls;
 using Avalonia.Markup.Xaml;
-using Avalonia.Styling;
+using System;
+using System.Linq;
 
 namespace Avalonia.ExampleApp.Window
 {

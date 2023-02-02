@@ -1,5 +1,4 @@
-﻿using Avalonia;
-using Avalonia.Controls;
+﻿using Avalonia.Controls;
 using Avalonia.ExampleApp.Model.PropertyGrid_Proxy;
 using Avalonia.ExtendedToolkit.Controls.PropertyGrid;
 using Avalonia.Markup.Xaml;

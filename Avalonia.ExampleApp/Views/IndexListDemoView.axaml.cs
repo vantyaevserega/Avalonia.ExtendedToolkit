@@ -1,19 +1,10 @@
-﻿using Avalonia;
-using Avalonia.Controls;
-using Avalonia.Controls.ApplicationLifetimes;
-using Avalonia.Controls.Primitives;
-using Avalonia.ExtendedToolkit.Controls;
-using Avalonia.Input;
-using Avalonia.Interactivity;
-using Avalonia.Markup.Xaml;
-using Avalonia.Media.Imaging;
+﻿using Avalonia.ExtendedToolkit.Controls;
 using System;
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System.IO;
 using System.Linq;
-using System.Text.RegularExpressions;
-using System.Threading.Tasks;
+
+using Avalonia.Controls;
+using Avalonia.Markup.Xaml;
 
 namespace Avalonia.ExampleApp.Views
 {
@@ -36,16 +27,16 @@ namespace Avalonia.ExampleApp.Views
 
             _indexItemsList = this.FindControl<IndexItemsControl>("indexItemsList");
 
-              this.FindControl<RadioButton>("rbDefaultSort").Checked += (o, e) =>
-              {
-                
-                _indexItemsList.IndexSectionItems=new ObservableCollection<string>(_defaultIndexes);
+            this.FindControl<RadioButton>("rbDefaultSort").Checked += (o, e) =>
+            {
 
-              };
+                _indexItemsList.IndexSectionItems = new ObservableCollection<string>(_defaultIndexes);
+
+            };
 
             this.FindControl<RadioButton>("rbDefaultReverse").Checked += (o, e) =>
               {
-                _indexItemsList.IndexSectionItems=new ObservableCollection<string>(_reverseIndexes);
+                  _indexItemsList.IndexSectionItems = new ObservableCollection<string>(_reverseIndexes);
               };
 
 

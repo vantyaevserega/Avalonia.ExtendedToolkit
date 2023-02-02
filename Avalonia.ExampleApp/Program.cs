@@ -1,12 +1,7 @@
-﻿using System;
-using System.Linq;
-using Avalonia.ExampleApp.ViewModels;
-using Avalonia.ExampleApp.Views;
-using Avalonia.ExtendedToolkit;
-using Avalonia.ExtendedToolkit.Controls;
-using Avalonia.ExtendedToolkit.Extensions;
+﻿using Avalonia.ExtendedToolkit.Extensions;
 using Avalonia.ReactiveUI;
-using Splat;
+using System;
+using System.Linq;
 
 namespace Avalonia.ExampleApp
 {
@@ -44,7 +39,7 @@ namespace Avalonia.ExampleApp
                 .UseAvaloniaExtended()
                 //.UseDataGrid()
                 .LogToTrace();
-            
+
 
             return appBuilder;
         }

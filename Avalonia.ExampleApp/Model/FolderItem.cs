@@ -14,7 +14,7 @@ namespace Avalonia.ExampleApp.Model
             Uri uri = new Uri("/Assets/openfolderHS.png", UriKind.Relative);
 
             var assets = AvaloniaLocator.Current.GetService<IAssetLoader>();
-            Image= new Bitmap(assets.Open(uri));
+            Image = new Bitmap(assets.Open(uri));
         }
     }
 }

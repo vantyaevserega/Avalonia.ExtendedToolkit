@@ -1,11 +1,7 @@
-using System;
-using System.Linq;
-using Avalonia;
 using Avalonia.Controls;
 using Avalonia.ExtendedToolkit.Controls;
-using Avalonia.Interactivity;
+using System;
 using Avalonia.Markup.Xaml;
-
 
 namespace Avalonia.ExampleApp.Views
 {
@@ -15,7 +11,7 @@ namespace Avalonia.ExampleApp.Views
         public ResizeRotateControlDemoView()
         {
             InitializeComponent();
-            this.Find<ResizeRotateControl>("resizeRotateControl").PositionChanged+=(o,e)=>
+            this.Find<ResizeRotateControl>("resizeRotateControl").PositionChanged += (o, e) =>
             {
                 Console.WriteLine(e);
             };

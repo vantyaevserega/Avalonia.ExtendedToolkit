@@ -53,7 +53,7 @@ namespace Avalonia.ExampleApp.Converters
             if (value != null)
             {
                 string val = value.ToString();
-                val = val.Replace("%", "");
+                val = val.Replace("%", string.Empty);
                 //decimal dec = Decimal.Parse(val);
                 //return dec;
             }

@@ -445,7 +445,7 @@ namespace Avalonia.ExampleApp.Model
             var albumsGroupedByArtist = Albums.GroupBy(a => a.Artist);
             foreach (var grouping in albumsGroupedByArtist)
             {
-                grouping.Key.Albums = new ObservableCollection<Album>( grouping.ToList());
+                grouping.Key.Albums = new ObservableCollection<Album>(grouping.ToList());
             }
         }
     }

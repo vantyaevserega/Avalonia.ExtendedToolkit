@@ -3,7 +3,7 @@ using ReactiveUI;
 
 namespace Avalonia.ExampleApp.Model
 {
-    public class Album: ReactiveObject
+    public class Album : ReactiveObject
     {
         private int _albumId;
         private int _genreId;

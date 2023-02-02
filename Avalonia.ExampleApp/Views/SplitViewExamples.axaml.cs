@@ -1,6 +1,4 @@
-﻿using Avalonia;
-using Avalonia.Controls;
-using Avalonia.ExtendedToolkit.Controls;
+﻿using Avalonia.Controls;
 using Avalonia.Markup.Xaml;
 
 namespace Avalonia.ExampleApp.Views
@@ -13,7 +11,7 @@ namespace Avalonia.ExampleApp.Views
         {
             this.InitializeComponent();
 
-            _splitView= this.FindControl<ExtendedToolkit.Controls.SplitView>("SimpleSplitview"); /*Splitview_PaneClosing*/
+            _splitView = this.FindControl<ExtendedToolkit.Controls.SplitView>("SimpleSplitview"); /*Splitview_PaneClosing*/
             // The Tag is used to handle closing
             _splitView.Tag = false;
             _splitView.PaneClosing += SplitView_PaneClosing;

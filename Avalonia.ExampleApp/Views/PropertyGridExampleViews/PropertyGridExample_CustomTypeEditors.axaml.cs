@@ -1,10 +1,10 @@
-﻿using System;
+﻿using Avalonia.ExampleApp.Model.PropertyGrid_CustomTypeEditors;
+using Avalonia.ExtendedToolkit.Controls.PropertyGrid;
+using System;
 using System.IO;
 using System.Linq;
-using Avalonia;
+
 using Avalonia.Controls;
-using Avalonia.ExampleApp.Model.PropertyGrid_CustomTypeEditors;
-using Avalonia.ExtendedToolkit.Controls.PropertyGrid;
 using Avalonia.Markup.Xaml;
 
 namespace Avalonia.ExampleApp.Views
@@ -73,20 +73,20 @@ namespace Avalonia.ExampleApp.Views
             if (prop != null)
             {
                 //workaround because setting isbrowsable is not working right now
-                var result= propertyGrid.Categories.FirstOrDefault(x => x.Properties.Contains(prop));
+                var result = propertyGrid.Categories.FirstOrDefault(x => x.Properties.Contains(prop));
 
-                if(result!=null)
+                if (result != null)
                 {
                     _tempItem = result;
                     _tempIndex = propertyGrid.Categories.IndexOf(result);
                     propertyGrid.Categories.Remove(result);
                 }
-                else 
+                else
                 {
                     propertyGrid.Categories.Insert(_tempIndex, _tempItem);
                 }
 
-                
+
 
                 //prop.IsReadOnly = !prop.IsReadOnly;
                 //prop.IsReadOnly = !prop.IsReadOnly;
@@ -97,12 +97,12 @@ namespace Avalonia.ExampleApp.Views
 
         private void PropertyGrid_PropertyValueChanged(object sender, System.EventArgs e)
         {
-            
+
         }
 
         private void PropertyGrid_SelectedObjectsChanged(object sender, System.EventArgs e)
         {
-            
+
         }
 
         private void InitializeComponent()

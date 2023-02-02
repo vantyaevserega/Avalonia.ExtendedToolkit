@@ -1,11 +1,8 @@
-﻿using Avalonia;
-using Avalonia.Controls.ApplicationLifetimes;
+﻿using Avalonia.Controls.ApplicationLifetimes;
 using Avalonia.ExampleApp.ViewModels;
 using Avalonia.ExampleApp.Views;
 using Avalonia.ExtendedToolkit;
-using Avalonia.ExtendedToolkit.Controls;
 using Avalonia.Markup.Xaml;
-using Splat;
 
 namespace Avalonia.ExampleApp
 {
@@ -13,7 +10,7 @@ namespace Avalonia.ExampleApp
     {
         public App()
         {
-            
+
         }
 
         public override void Initialize()
@@ -35,7 +32,7 @@ namespace Avalonia.ExampleApp
 
             ThemeManager.Instance.EnableTheme(mainWindow);
             SkinManager.Instance.EnableSkin(mainWindow);
-            
+
 
 
             base.OnFrameworkInitializationCompleted();

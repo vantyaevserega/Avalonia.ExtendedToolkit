@@ -3,7 +3,7 @@ using ReactiveUI;
 
 namespace Avalonia.ExampleApp.Model
 {
-    public class Genre: ReactiveObject
+    public class Genre : ReactiveObject
     {
         private int _genreId;
         private string _name;

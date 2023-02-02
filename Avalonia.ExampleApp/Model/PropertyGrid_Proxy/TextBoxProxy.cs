@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 using Avalonia.Controls;
 
 namespace Avalonia.ExampleApp.Model.PropertyGrid_Proxy
@@ -59,7 +57,7 @@ namespace Avalonia.ExampleApp.Model.PropertyGrid_Proxy
             component.PropertyChanged += Component_PropertyChanged;
         }
 
-        
+
 
         private void Component_PropertyChanged(object sender, AvaloniaPropertyChangedEventArgs e)
         {

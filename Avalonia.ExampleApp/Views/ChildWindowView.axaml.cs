@@ -1,10 +1,8 @@
-﻿using System.ComponentModel;
-using Avalonia;
-using Avalonia.Controls;
+﻿using Avalonia.Controls;
 using Avalonia.ExtendedToolkit.Controls;
-using Avalonia.ExtendedToolkit.Extensions;
 using Avalonia.Interactivity;
 using Avalonia.Markup.Xaml;
+using System.ComponentModel;
 
 namespace Avalonia.ExampleApp.Views
 {

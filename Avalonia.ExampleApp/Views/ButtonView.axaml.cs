@@ -1,5 +1,4 @@
-﻿using Avalonia;
-using Avalonia.Controls;
+﻿using Avalonia.Controls;
 using Avalonia.ExtendedToolkit.Controls;
 using Avalonia.Markup.Xaml;
 
@@ -15,7 +14,7 @@ namespace Avalonia.ExampleApp.Views
         {
             this.InitializeComponent();
             _badged = this.FindControl<Badged>("CountingBadge");
-            this.FindControl<Button>("btnClickMe").Click += (o, e) => 
+            this.FindControl<Button>("btnClickMe").Click += (o, e) =>
             {
                 _badged.Badge = _clickCounter++;
             };

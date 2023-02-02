@@ -1,7 +1,4 @@
-﻿using Avalonia;
-using Avalonia.Controls;
-using Avalonia.ExampleApp.Model.PropertyGrid_DialogEditor;
-using Avalonia.ExtendedToolkit.Controls.PropertyGrid;
+﻿using Avalonia.Controls;
 using Avalonia.Markup.Xaml;
 
 namespace Avalonia.ExampleApp.Views

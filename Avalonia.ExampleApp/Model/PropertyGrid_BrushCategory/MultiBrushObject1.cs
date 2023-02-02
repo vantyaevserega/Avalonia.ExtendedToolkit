@@ -6,7 +6,7 @@ namespace Avalonia.ExampleApp.Model
     /// <summary>
     /// Sample multi-brush object.
     /// </summary>
-    public class MultiBrushObject1:AvaloniaObject
+    public class MultiBrushObject1 : AvaloniaObject
     {
         /// <summary>
         /// Gets or sets the BorderBrush property.  This dependency property

@@ -1,8 +1,8 @@
-﻿using System;
-using System.Globalization;
+﻿using Avalonia.Data.Converters;
 using Avalonia.ExtendedToolkit.Font;
-using Avalonia.Data.Converters;
 using Avalonia.Media;
+using System;
+using System.Globalization;
 
 namespace Avalonia.ExampleApp.Converters
 {

@@ -1,13 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Avalonia.Controls;
+﻿using Avalonia.Controls;
 using Avalonia.ExtendedToolkit.Controls.PropertyGrid.Editors;
 using Avalonia.ExtendedToolkit.Controls.PropertyGrid.PropertyTypes;
 using Avalonia.ExtendedToolkit.Extensions;
 using Avalonia.Input;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace Avalonia.ExampleApp.Model
 {
@@ -51,7 +50,7 @@ namespace Avalonia.ExampleApp.Model
                     Name="Image Files (*.jpg, *.png, *.bmp)"
                     , Extensions=new List<string>(){"jpg", "png", "bmp" }
                 }
-            
+
             };
 
             var mainWindow = ApplicationExtension.GetMainWindow();

@@ -1,10 +1,10 @@
-﻿using Avalonia;
-using Avalonia.Controls;
-using Avalonia.ExtendedToolkit.Controls;
-using Avalonia.Markup.Xaml;
+﻿using Avalonia.ExtendedToolkit.Controls;
 using System.Collections.Generic;
 using System.Linq;
 
+
+using Avalonia.Controls;
+using Avalonia.Markup.Xaml;
 
 namespace Avalonia.ExampleApp.Views
 {
@@ -25,18 +25,18 @@ namespace Avalonia.ExampleApp.Views
         private void BreadcrumbBar_PopulateItems(object sender, BreadcrumbItemEventArgs e)
         {
             List<BreadcrumbItem> items = e.Item.Items.OfType<BreadcrumbItem>().ToList();
-            if(items.Count==0)
+            if (items.Count == 0)
             {
                 var trace = e.Item.Header;
                 items.Add(BreadcrumbItem.CreateItem(trace));
                 e.Item.Items = items;
             }
-            
+
         }
 
         private void RefreshClick(object sender, Interactivity.RoutedEventArgs e)
         {
-            
+
 
 
 

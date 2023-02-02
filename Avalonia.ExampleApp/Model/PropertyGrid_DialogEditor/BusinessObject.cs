@@ -1,7 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using Avalonia.ExtendedToolkit.Controls.PropertyGrid;
+﻿using Avalonia.ExtendedToolkit.Controls.PropertyGrid;
+using System;
 
 namespace Avalonia.ExampleApp.Model.PropertyGrid_DialogEditor
 {

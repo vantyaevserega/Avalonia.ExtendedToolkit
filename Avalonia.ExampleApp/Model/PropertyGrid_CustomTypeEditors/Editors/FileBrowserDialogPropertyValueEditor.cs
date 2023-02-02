@@ -1,13 +1,11 @@
-﻿using System;
-using System.Linq;
-using System.Threading.Tasks;
-using Avalonia.Controls;
-using Avalonia.Controls.ApplicationLifetimes;
-using Avalonia.ExampleApp.Model.PropertyGrid_CustomTypeEditors;
+﻿using Avalonia.Controls;
 using Avalonia.ExtendedToolkit.Controls.PropertyGrid.Editors;
 using Avalonia.ExtendedToolkit.Controls.PropertyGrid.PropertyTypes;
 using Avalonia.ExtendedToolkit.Extensions;
 using Avalonia.Input;
+using System;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace Avalonia.ExampleApp.Model
 {
@@ -18,10 +16,10 @@ namespace Avalonia.ExampleApp.Model
             //little ugly search for the resource
             var mainWindow = ApplicationExtension.GetMainWindow();
 
-            if(mainWindow!=null)
+            if (mainWindow != null)
             {
                 object res = null;
-                foreach(var item in mainWindow.FindChildren<UserControl>(true))
+                foreach (var item in mainWindow.FindChildren<UserControl>(true))
                 {
                     if (item.TryFindResource(LocalResources.FileBrowserEditorKey, out res))
                         break;
@@ -34,7 +32,7 @@ namespace Avalonia.ExampleApp.Model
             }
         }
 
-        
+
 
         public override void ShowDialog(PropertyItemValue propertyValue, IInputElement commandSource)
         {
@@ -56,9 +54,9 @@ namespace Avalonia.ExampleApp.Model
 
             var mainWindow = ApplicationExtension.GetMainWindow();
 
-            openFileDialog.ShowAsync(mainWindow).ContinueWith(x => 
+            openFileDialog.ShowAsync(mainWindow).ContinueWith(x =>
             {
-                if(x.IsFaulted==false)
+                if (x.IsFaulted == false)
                 {
 
                     string result = x.Result.FirstOrDefault();
@@ -68,11 +66,11 @@ namespace Avalonia.ExampleApp.Model
                 }
 
 
-                
+
 
             }, TaskScheduler.FromCurrentSynchronizationContext());
 
-            
+
         }
     }
 }

@@ -23,15 +23,15 @@ namespace Avalonia.ExampleApp.Model
             string[] filters = filter.Split(new string[] { "|" }, StringSplitOptions.RemoveEmptyEntries);
             string filtername = string.Empty;
             string correctedFilter = "*";
-            
-            if(filters.Length>1)
+
+            if (filters.Length > 1)
             {
                 filtername = filters.First();
                 correctedFilter = filters.Last().Replace("*.", string.Empty);
             }
             else
             {
-                filtername= correctedFilter = filters.FirstOrDefault()?.Replace("*.", string.Empty);
+                filtername = correctedFilter = filters.FirstOrDefault()?.Replace("*.", string.Empty);
             }
 
 

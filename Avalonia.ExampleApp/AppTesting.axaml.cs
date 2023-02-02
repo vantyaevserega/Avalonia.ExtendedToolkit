@@ -1,13 +1,8 @@
-﻿using Avalonia;
-using Avalonia.Controls.ApplicationLifetimes;
-using Avalonia.ExampleApp.Model;
+﻿using Avalonia.Controls.ApplicationLifetimes;
 using Avalonia.ExampleApp.ViewModels;
 using Avalonia.ExampleApp.Views;
 using Avalonia.ExtendedToolkit;
-using Avalonia.ExtendedToolkit.Controls;
-using Avalonia.ExtendedToolkit.Controls.PropertyGrid;
 using Avalonia.Markup.Xaml;
-using ReactiveUI;
 
 namespace Avalonia.ExampleApp
 {
@@ -15,7 +10,7 @@ namespace Avalonia.ExampleApp
     {
         public AppTesting()
         {
-            
+
         }
 
         public override void Initialize()

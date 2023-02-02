@@ -1,7 +1,7 @@
-﻿using System.ComponentModel;
-using Avalonia.ExtendedToolkit.Controls.PropertyGrid;
+﻿using Avalonia.ExtendedToolkit.Controls.PropertyGrid;
 using Avalonia.Media;
 using ReactiveUI;
+using System.ComponentModel;
 
 namespace Avalonia.ExampleApp.Model
 {

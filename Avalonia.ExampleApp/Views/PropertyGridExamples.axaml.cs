@@ -1,10 +1,5 @@
-﻿using System.Collections.ObjectModel;
-using Avalonia;
-using Avalonia.Controls;
-using Avalonia.ExampleApp.Model;
-using Avalonia.ExtendedToolkit.Controls.PropertyGrid;
+﻿using Avalonia.Controls;
 using Avalonia.Markup.Xaml;
-using Avalonia.Media;
 
 namespace Avalonia.ExampleApp.Views
 {
@@ -21,6 +16,6 @@ namespace Avalonia.ExampleApp.Views
         }
     }
 
-    
+
 
 }
